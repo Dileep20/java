@@ -1,10 +1,10 @@
-class SmartPhoneGimbal{
+class FeiyuGimbal{
 	public static void main(String[] gimbal){
 		System.out.println("Start of Main");
 		
-		String brand = "hohem ";
-		String model = "iSteady M6";
-		int price = 17450;
+		String brand = "Feiyu Tech";
+		String model = "M6A";
+		int price = 21450;
 		String connectivity = "Bluetooth";
 		
 		System.out.println("The brand of the Gimbal is "+brand);

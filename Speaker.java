@@ -1,12 +1,19 @@
 class Speaker{
-	public static void main(String[] speaker){
-		System.out.println("About Marshall Stanmore II Wireless Bluetooth Powered Speaker");
-		System.out.println("* Stanmore II is the most versatile speaker in the Marshall line-up and is perfect for any room, big or small");
-		System.out.println("* Bluetooth 5.0 provides superior wireless sound at a range of up to 30 feet");
-		System.out.println("* This speaker combines contemporary technology with iconic Marshall design to deliver hard-hitting sound while retaining a classic look");
-		System.out.println("* Fine-tune your music to meet your requirements with the Marshall Bluetooth app or the analogue controls on your speaker’s top panel");
-		System.out.println("* Stanmore II is the most versatile speaker in the Marshall line-up and is perfect for any room, big or small");
-		System.out.println("* This speaker combines contemporary technology with iconic Marshall design to deliver hard-hitting sound while retaining a classic look");
-		System.out.println("* Fine-tune your music to meet your requirements with the Marshall Bluetooth app or the analogue controls on your speaker s top panel");
+	public static void main(String[] speakers){
+		System.out.println("Start of Main");
+		
+		String Brand = "ZEBRONICS";
+		int price = 24999;
+		String outputPower = "625 Watts";
+		String frequencyResponse = "40 Hz";
+		String connectivityTechnology = "Auxiliary and USB";
+
+		System.out.println("The Brand of the Speaker is "+Brand);
+		System.out.println("The price is "+price);
+		System.out.println("The Output Power of the Speaker is "+outputPower);
+		System.out.println("The Frequency Response of the Speaker is "+frequencyResponse);
+		System.out.println("The Connectivity Technology is "+connectivityTechnology);
+		
+		System.out.println("End of Main");
 	}
 }
