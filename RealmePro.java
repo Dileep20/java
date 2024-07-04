@@ -1,18 +1,31 @@
 class RealmePro{
-	
-		static String os = "Android 14";
-		static int price = 24800;
-		static String processor = "Qualcomm";
-		static String celluarTechnology = "5G, 4G";
-		
 	public static void main(String[] mobile){
 		System.out.println("Start of Main");
+		
+		System.out.println("The Product Details are");
+		ProductFeatures();
+		
+		System.out.println("End of Main");
+	}
+	
+	public static void ProductFeatures(){
+		System.out.println("Product Features method started");
+		
+		String os = "Android 14";
+		int price = 24800;
+		String processor = "Qualcomm";
+		String celluarTechnology = "5G, 4G";
+		String storage = "128GB";
+		String color = "Blue";
 		
 		System.out.println("The Operating System used is "+os);
 		System.out.println("The price is "+price);
 		System.out.println("The processor used is "+processor);
 		System.out.println("The celluar technology for connectivity is "+celluarTechnology);
+		System.out.println("The storage of product is "+storage);
+		System.out.println("The color is "+color);
 		
-		System.out.println("End of Main");
+		System.out.println("Product Features method ended");
+	return;
 	}
 }
