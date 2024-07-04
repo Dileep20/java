@@ -1,11 +1,12 @@
 class RealmeGT{
+	
+		static String os = "ColorOS";
+		static int price = 24000;
+		static String processor = "HelioG95";
+		static String celluarTechnology = "5G, 4G";
+		
 	public static void main(String[] mobile){
 		System.out.println("Start of Main");
-		
-		String os = "ColorOS";
-		int price = 24000;
-		String processor = "HelioG95";
-		String celluarTechnology = "5G, 4G";
 		
 		System.out.println("The Operating System used is "+os);
 		System.out.println("The price is "+price);

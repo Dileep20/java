@@ -1,11 +1,12 @@
 class OnePlusNord{
+	
+		static String os = "OxygenOS";
+		static int price = 20000;
+		static String processor = "Mediatek";
+		static String celluarTechnology = "5G, 4G";
+		
 	public static void main(String[] mobile){
 		System.out.println("Start of Main");
-		
-		String os = "OxygenOS";
-		int price = 20000;
-		String processor = "Mediatek";
-		String celluarTechnology = "5G, 4G";
 		
 		System.out.println("The Operating System used is "+os);
 		System.out.println("The price is "+price);

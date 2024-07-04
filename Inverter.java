@@ -1,11 +1,12 @@
 class Inverter{
+	
+		static int price = 23000;
+		static String brand = "Genus";
+		static String colour = "White";
+		static String powerSource = "Battery power";
+		
 	public static void main(String[] inverter){
 		System.out.println("Start of Main");
-		
-		int price = 23000;
-		String brand = "Genus";
-		String colour = "White";
-		String powerSource = "Battery power";
 		
 		System.out.println("The brand of Induction is "+brand);
 		System.out.println("The price is "+price);

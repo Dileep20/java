@@ -1,11 +1,12 @@
 class AirFryer{
+	
+		static int price = 3080;
+		static String brand = "philips";
+		static String colour = "Black";
+		static String feature = "Digital";
+		
 	public static void main(String[] fryer){
 		System.out.println("Start of Main");
-		
-		int price = 3080;
-		String brand = "philips";
-		String colour = "Black";
-		String feature = "Digital";
 		
 		System.out.println("The brand of Induction is "+brand);
 		System.out.println("The price is "+price);

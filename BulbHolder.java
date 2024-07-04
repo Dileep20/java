@@ -1,12 +1,13 @@
 class BulbHolder{
+	
+		static String brand = "Hiffin";
+		static int price = 800;
+		static String finishType = "Polished";
+		static String bulbBase = "E27";
+		static String switchType = "Toggle";
+		
 	public static void main(String[] holder){
 		System.out.println("Start of Main");
-		
-		String brand = "Hiffin";
-		int price = 800;
-		String finishType = "Polished";
-		String bulbBase = "E27";
-		String switchType = "Toggle";
 		
 		System.out.println("The Brand of the Bulb Holder is "+brand);
 		System.out.println("The price is "+ price);

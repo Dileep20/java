@@ -1,13 +1,14 @@
 class Speaker{
+	
+		static String Brand = "ZEBRONICS";
+		static int price = 24999;
+		static String outputPower = "625 Watts";
+		static String frequencyResponse = "40 Hz";
+		static String connectivityTechnology = "Auxiliary and USB";
+
 	public static void main(String[] speakers){
 		System.out.println("Start of Main");
 		
-		String Brand = "ZEBRONICS";
-		int price = 24999;
-		String outputPower = "625 Watts";
-		String frequencyResponse = "40 Hz";
-		String connectivityTechnology = "Auxiliary and USB";
-
 		System.out.println("The Brand of the Speaker is "+Brand);
 		System.out.println("The price is "+price);
 		System.out.println("The Output Power of the Speaker is "+outputPower);

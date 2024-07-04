@@ -1,14 +1,15 @@
 class SmartTV{
+	
+		static String brand = "Samsung";
+		static int size = 32;
+		static int price = 15000;
+		static String display = "LED";
+		static String resolution = "768p";
+		static String refreshRate = "60 Hz";
+
 	public static void main(String[] tv){
 		System.out.println("Start of Main");
 		
-		String brand = "Samsung";
-		int size = 32;
-		int price = 15000;
-		String display = "LED";
-		String resolution = "768p";
-		String refreshRate = "60 Hz";
-
 		System.out.println("The Brand of the TV is "+brand);
 		System.out.println("The Size of the TV is "+size);
 		System.out.println("The Prize of the TV is "+price);
