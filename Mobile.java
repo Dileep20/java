@@ -2,19 +2,21 @@ class Mobile{
 
 	static boolean isMobileOn = false ;
 	
-	public static void turnOn(){
+	public static boolean onOrOff(){
 		
 		System.out.println("Start of turnOn method");
 		
 		if(isMobileOn == false){
 			isMobileOn = true;
-			System.out.println("Mobile is turned on");
+		
+		}else if(isMobileOn == true){
+			isMobileOn = false;
+			
 		}
 		System.out.println("End of turnOn method");
-	return;
-	}
-	
-	public static void turnOff(){
+	return isMobileOn;
+	}	
+	/*public static void turnOff(){
 		
 		System.out.println("Start of turnOff method");
 		
@@ -24,5 +26,5 @@ class Mobile{
 		}
 		System.out.println("End of turnOff method");
 	return;
-	}
+	}*/
 }

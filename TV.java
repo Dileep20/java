@@ -2,19 +2,23 @@ class TV{
 
 	static boolean isDisplayOn = false ;
 	
-	public static void turnOn(){
+	public static boolean onOrOff(){
 		
-		System.out.println("Start of turnOn method");
+		System.out.println("Start of onOrOff method");
 		
 		if(isDisplayOn == false){
 			isDisplayOn = true;
-			System.out.println("TV is turned on");
+			
 		}
-		System.out.println("End of turnOn method");
-	return;
+		else if(isDisplayOn == true){
+			isDisplayOn = false;
+			
+		}
+		System.out.println("End of onOrOff method");
+	return isDisplayOn;
 	}
 	
-	public static void turnOff(){
+	/*public static void turnOff(){
 		
 		System.out.println("Start of turnOff method");
 		
@@ -24,5 +28,5 @@ class TV{
 		}
 		System.out.println("End of turnOff method");
 	return;
-	}
+	}*/
 }
