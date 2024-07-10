@@ -6,14 +6,30 @@ class LaptopRunner{
 		boolean running = Laptop.onOrOff();
 		System.out.println("is Laptop on : "+running);
 	
+		Laptop.increaseVolume();
+		Laptop.increaseVolume();
+		Laptop.increaseVolume();
+		Laptop.increaseVolume();
+		Laptop.increaseVolume();
+		Laptop.increaseVolume();
+		Laptop.increaseVolume();
+		Laptop.increaseVolume();
+		
+		Laptop.decreaseVolume();
+		Laptop.decreaseVolume();
+		Laptop.decreaseVolume();
+		Laptop.decreaseVolume();
+		Laptop.decreaseVolume();
+		Laptop.decreaseVolume();
+		Laptop.decreaseVolume();
+		Laptop.decreaseVolume();
+		
 		running =Laptop.onOrOff();
 		System.out.println("is Laptop on : "+running);
 		
-		running = Laptop.onOrOff();
-		System.out.println("is Laptop on : "+running);
+		Laptop.increaseVolume();
 		
-		running =	Laptop.onOrOff();
-		System.out.println("is Laptop on : "+running);
+		Laptop.decreaseVolume();
 		
 		System.out.println("End of main method");
 	}
