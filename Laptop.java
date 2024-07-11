@@ -9,13 +9,15 @@ class Laptop{
 		
 		System.out.println("Start of turnOn method");
 		
-		if(isLaptopOn == false){
+		isLaptopOn = (isLaptopOn == false) ? true : false;
+		
+		/*if(isLaptopOn == false){
 			isLaptopOn = true;
 	
 		}else if(isLaptopOn == true){
 			isLaptopOn = false;
 		
-		}
+		}*/
 		System.out.println("End of turnOn method");
 	return isLaptopOn;
 	}
