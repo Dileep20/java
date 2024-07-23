@@ -8,7 +8,12 @@ class SpotifyAccount{
 	static String conformPswd;
 	
 	public static boolean createAccount(String givenName,String dob,String email,String loginID,String pwd,String conformPwd){
-		boolean isAccountCreated = false;
+	
+	return dataValidation(givenName,dob,email,loginID,pwd,conformPwd);
+	}
+	
+	public static boolean dataValidation(String givenName,String dob,String email,String loginID,String pwd,String conformPwd){
+		boolean isDataValidated = false;
 		
 		boolean isGivenNameValid = false;
 		boolean isDob = false;
@@ -54,9 +59,9 @@ class SpotifyAccount{
 			System.out.println("conform password is invalid");
 	
 	if(isGivenNameValid == true && isDob == true && isEmail == true && isLoginID == true && isPwd == true && isConformPwd == true)
-		isAccountCreated = true;
+		isDataValidated = true;
 	
-	return isAccountCreated;
+	return isDataValidated;
 	}
 	
 	public static void readUserAccountDetails(){

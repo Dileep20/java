@@ -13,7 +13,12 @@ static String ind;
 static String edu;
 
 public static boolean createLinkedlnAccount(String firstName, String lastName,String emailId, String pwd,String confirmPwd,String country,int pinCode, String company, String title, String industry,String education){
-	boolean isLinkedlnCreated = true;
+	
+	return validateDetails(firstName,lastName,emailId,pwd,confirmPwd,country,pinCode,company,title,industry,education);
+}
+
+public static boolean validateDetails(String firstName, String lastName,String emailId, String pwd,String confirmPwd,String country,int pinCode, String company, String title, String industry,String education){
+	boolean isValidated = true;
 	
 	boolean isFirstName = false;
 	boolean isLastName = false;
@@ -94,10 +99,10 @@ public static boolean createLinkedlnAccount(String firstName, String lastName,St
 			System.out.println("Invalid education");
 	
 	if(isFirstName == true && isLastName == true && isEmail == true && isPwd == true && isCnfmPwd == true && isNation == true && isPinCode == true && isIndustry == true && isCompany == true && isRole == true && isEducation == true)
-		isLinkedlnCreated = true;
+		isValidated = true;
 	
 	
-	return isLinkedlnCreated;
+	return isValidated;
 }
     
 	public static void readLinkedlnAccount(){

@@ -14,9 +14,13 @@ class PassportGrneration{
 	static String hintAnswer;
 	static String capt;
 	
-	
 	public static boolean createUserPassport(String cpvLocation, String dcdrLocation, String givenName,String surName,String dob,String email,boolean isEmailLoginSame,String loginID,String pwd,String conformPwd,String hintQues,String hintAns,String capture){
-		boolean isPassportCreated = false;
+	
+	return dataValidate(cpvLocation,dcdrLocation,givenName,surName,dob,email,isEmailLoginSame,loginID,pwd,conformPwd,hintQues,hintAns,capture);
+	}
+	
+	public static boolean dataValidate(String cpvLocation, String dcdrLocation, String givenName,String surName,String dob,String email,boolean isEmailLoginSame,String loginID,String pwd,String conformPwd,String hintQues,String hintAns,String capture){
+		boolean isDataValidated = false;
 		
 		boolean isCpvLocationValid = false;
 		boolean isDcdrLocationValid = false;
@@ -123,9 +127,9 @@ class PassportGrneration{
 		isPassportCreated = true;*/
 		
 	if(isCpvLocationValid == true && isDcdrLocationValid == true && isCpvLocationValid == true && isDcdrLocationValid == true && isGivenNameValid == true && isGivenSurName == true && isDob == true && isEmail == true && isLoginID == true && isPwd == true && isConformPwd == true && isHintQues == true && isHintAns == true && isCapture == true  )
-		isPassportCreated = true;
+		isDataValidated = true;
 	
-	return isPassportCreated;
+	return isDataValidated;
 	}
 	
 	public static void readUserPassportDetails(){

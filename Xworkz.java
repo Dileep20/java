@@ -9,9 +9,13 @@ class Xworkz{
 	static String degree;
 	static int yearOfPass;
 
-
 	public static boolean createTraineeRegistration(String fullName, long contactNum, long whatsAppNum, String email, String usnNo, String stream, String qualification, int passOutYear){
-		boolean isRegistrationCreated = false;
+		boolean isTraineeRegistrated = validationDetails(fullName,contactNum,whatsAppNum,email,usnNo,stream,qualification,passOutYear);
+	return isTraineeRegistrated;
+	}
+	
+	public static boolean validationDetails(String fullName, long contactNum, long whatsAppNum, String email, String usnNo, String stream, String qualification, int passOutYear){
+		boolean isDataValidated = false;
 	
 		boolean isFullName = false;
 		boolean isContactNumber = false;
@@ -72,9 +76,9 @@ class Xworkz{
 		
 	
 		if(isFullName == true && isContactNumber == true && isRegNo == true && isWhatsapp == true && isEmail == true && isBranchName == true && isDegree == true && isPassOutYear == true)
-			isRegistrationCreated = true;
+			isDataValidated = true;
 	
-	return isRegistrationCreated;
+	return isDataValidated;
 }
     
 	public static void readTraineeRegistration(){

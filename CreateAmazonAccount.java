@@ -9,7 +9,12 @@ class CreateAmazonAccount{
 		
     public static boolean createUserAccount(String firstName, String lastName, long mobileNumber, String email, String pwd, String conformPwd){
 	
-	    boolean isAccountCreated = false ;
+	return validateUserData(firstName,lastName,mobileNumber,email,pwd,conformPwd);
+	}
+	
+	public static boolean validateUserData(String firstName, String lastName, long mobileNumber, String email, String pwd, String conformPwd){
+	
+	    boolean isValidationOfData = false ;
 		
 		boolean isFirstName = false;
 		boolean isLastName = false;
@@ -63,9 +68,9 @@ class CreateAmazonAccount{
 		isAccountCreated = true ;*/
 		
 		if(isFirstName == true && isLastName == true && isMobileNumber == true && isEmail == true && isPwd == true && isConformPwd == true)
-			isAccountCreated = true;
+			isValidationOfData = true;
 		 
-	return isAccountCreated ;
+	return isValidationOfData ;
 	}
     
 	public static void readAccountDetails(){

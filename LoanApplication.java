@@ -9,7 +9,12 @@ class LoanApplication{
 	
 	public static boolean createLoanApplication(int crdtScr, String applicantName, String loanApplicationType, String nameOfBank,float interest,int noOfYears){
 		
-		boolean isApplicationCreated = false;
+	return validationData(crdtScr,applicantName,loanApplicationType,nameOfBank,interest,noOfYears);
+	}
+	
+	public static boolean validationData(int crdtScr, String applicantName, String loanApplicationType, String nameOfBank,float interest,int noOfYears){
+	
+		boolean isDataValidated = false;
 		
 		boolean isCreditScore = false;
 		boolean isApplicantName = false;
@@ -55,9 +60,9 @@ class LoanApplication{
 			System.out.println("Invalid Number of years");
 		
 		if(isCreditScore == true && isApplicantName == true && isBankName == true && isLoanType == true && isRateOfInterest == true && isNoOfYears == true)
-			isApplicationCreated = true;
+			isDataValidated = true;
 	
-	return isApplicationCreated;
+	return isDataValidated;
 	}
 	
 	public static void readApplicantDetails(){

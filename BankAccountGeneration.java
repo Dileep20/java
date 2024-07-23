@@ -6,10 +6,14 @@ class BankAccountGeneration{
 		static String location;
 		static long phoneNumber ;
 
+		public static boolean createCustomerBankAccount(String firstName, long aadhaarNumber,String dOB, String address,long mobileNumber){
 		
-    public static boolean createCustomerBankAccount(String firstName, long aadhaarNumber,String dOB, String address,long mobileNumber){
+		return dataValidation(firstName,aadhaarNumber,dOB,address,mobileNumber);
+		}
+		
+    public static boolean dataValidation(String firstName, long aadhaarNumber,String dOB, String address,long mobileNumber){
 	
-	     boolean isBankAccountCreated = false ;
+	     boolean isDetailsValidated = false ;
 		 
 		 boolean isFirstName = false;
 		 boolean isAadhaarNumber = false;
@@ -48,7 +52,7 @@ class BankAccountGeneration{
 			System.out.println("mobile number is invalid");
 		 
 		 if(isFirstName == true && isAadhaarNumber == true && isDOB == true && isAddress == true && isMobileNumber == true)
-			 isBankAccountCreated = true; 
+			 isDetailsValidated = true; 
 		/* name = firstName ;
 		 aadhaarNo = aadhaarNumber ;
 		 dob = dOB ;
@@ -58,7 +62,7 @@ class BankAccountGeneration{
 		 isBankAccountCreated = true;*/
 		 
 		 
-		 return isBankAccountCreated ;
+		 return isDetailsValidated ;
 	
 	}
     
