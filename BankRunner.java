@@ -4,14 +4,8 @@ class BankRunner{
 	
 	    System.out.println("Main Started");
 		
-		Bank icic = new Bank();
-		icic.bankId = 455623;
-		icic.bankName = "ICICI Bank";
-		icic.branchName = "Koramangala";
-		icic.ifscCode = "ICIC0000047";
-		icic.swiftCode = "ICICINBB002";
-		icic.noOfWorker = 18;
-		icic.managerName = "Rafik";
+		Bank icic = new Bank(455623,"ICICI Bank","Koramangala","ICIC0000047","ICICINBB002",18,"Rafik");
+		
 		System.out.println("Bank Details");
 		System.out.println("Bank Id is " + icic.bankId);
 		System.out.println("Bank Name is " + icic.bankName);
@@ -21,14 +15,8 @@ class BankRunner{
 		System.out.println("Number of Worker is " + icic.noOfWorker);
 		System.out.println("Branch Manager Name is " + icic.managerName);
 		
-	    Bank baroda = new Bank();
-		baroda.bankId = 521452;
-		baroda.bankName = "Bank of Baroda";
-		baroda.branchName = "Chikkamagaluru";
-		baroda.ifscCode = "BARB0000237";
-		baroda.swiftCode = "BARBINBB237";
-		baroda.noOfWorker = 20;
-		baroda.managerName = "Rakesh";
+	    Bank baroda = new Bank(521452,"Bank of Baroda","Chikkamagaluru","BARB0000237","BARBINBB237",20,"Rakesh");
+		
 		System.out.println("Bank Details");
 		System.out.println("Bank Id is " + baroda.bankId);
 		System.out.println("Bank Name is " + baroda.bankName);
@@ -38,14 +26,8 @@ class BankRunner{
 		System.out.println("Number of Worker is " + baroda.noOfWorker);
 		System.out.println("Branch Manager Name is " + baroda.managerName);
 		
-		Bank canara = new Bank();
-		canara.bankId = 254136;
-		canara.bankName = "Canara bank";
-		canara.branchName = "Koramangala";
-		canara.ifscCode = "CNRB00000885";
-		canara.swiftCode = "CNRBINBB885";
-		canara.noOfWorker = 22;
-		canara.managerName = "Asha";
+		Bank canara = new Bank(254136,"Canara bank","Koramangala","CNRB00000885","CNRBINBB885",22,"Asha");
+		
 		System.out.println("Bank Details");
 		System.out.println("Bank Id is " + canara.bankId);
 		System.out.println("Bank Name is " + canara.bankName);
@@ -55,14 +37,8 @@ class BankRunner{
 		System.out.println("Number of Worker is " + canara.noOfWorker);
 		System.out.println("Branch Manager Name is " + canara.managerName);
 		
-		Bank hdfc = new Bank();
-		hdfc.bankId = 96542;
-		hdfc.bankName = "HDFC";
-		hdfc.branchName = "Birur";
-		hdfc.ifscCode = "HDFC0000544";
-		hdfc.swiftCode = "HDFCINBB544";
-		hdfc.noOfWorker = 25;
-		hdfc.managerName = "Akash";
+		Bank hdfc = new Bank(96542,"HDFC","Birur","HDFC0000544","HDFCINBB544",25,"Akash");
+		
 		System.out.println("Bank Details");
 		System.out.println("Bank Id is " + hdfc.bankId);
 		System.out.println("Bank Name is " + hdfc.bankName);
@@ -72,14 +48,8 @@ class BankRunner{
 		System.out.println("Number of Worker is " + hdfc.noOfWorker);
 		System.out.println("Branch Manager Name is " + hdfc.managerName);
 		
-		Bank fedral = new Bank();
-		fedral.bankId = 254785;
-		fedral.bankName = "Federal Bank";
-		fedral.branchName = "kadur";
-		fedral.ifscCode = "FEDB00000378";
-		fedral.swiftCode = "FEDBINBB378";
-		fedral.noOfWorker = 26;
-		fedral.managerName = "Chandru";
+		Bank fedral = new Bank(254785,"Federal Bank","kadur","FEDB00000378","FEDBINBB378",26,"Chandru");
+		
 		System.out.println("Bank Details");
 		System.out.println("Bank Id is " + fedral.bankId);
 		System.out.println("Bank Name is " + fedral.bankName);
@@ -89,14 +59,8 @@ class BankRunner{
 		System.out.println("Number of Worker is " + fedral.noOfWorker);
 		System.out.println("Branch Manager Name is " + fedral.managerName);
 		
-		Bank kgb = new Bank();
-		kgb.bankId = 517468;
-		kgb.bankName = "Karnataka Bank";
-		kgb.branchName = "Swavdati";
-		kgb.ifscCode = "KARB00000071";
-		kgb.swiftCode = "KARBINBB071";
-		kgb.noOfWorker = 41;
-		kgb.managerName = "Arun";
+		Bank kgb = new Bank(517468,"Karnataka Bank","Swavdati","KARB00000071","KARBINBB071",41,"Arun");
+		
 		System.out.println("Bank Details");
 		System.out.println("Bank Id is " + kgb.bankId);
 		System.out.println("Bank Name is " + kgb.bankName);
@@ -106,14 +70,8 @@ class BankRunner{
 		System.out.println("Number of Worker is " + kgb.noOfWorker);
 		System.out.println("Branch Manager Name is " + kgb.managerName);
 		
-		Bank sbi = new Bank();
-		sbi.bankId = 726138;
-		sbi.bankName = "State Bank of India";
-		sbi.branchName = "Kadur";
-		sbi.ifscCode = "SBI00000343";
-		sbi.swiftCode = "SBIINBB343";
-		sbi.noOfWorker = 21;
-		sbi.managerName = "Suraj";
+		Bank sbi = new Bank(726138,"State Bank of India","Kadur","SBI00000343","SBIINBB343",21,"Suraj");
+		
 		System.out.println("Bank Details");
 		System.out.println("Bank Id is " + sbi.bankId);
 		System.out.println("Bank Name is " + sbi.bankName);
@@ -123,14 +81,8 @@ class BankRunner{
 		System.out.println("Number of Worker is " + sbi.noOfWorker);
 		System.out.println("Branch Manager Name is " + sbi.managerName);
 		
-		Bank iob = new Bank();
-		iob.bankId = 7231649;
-		iob.bankName = "Indian Oversies Bank";
-		iob.branchName = "lingadahalli";
-		iob.ifscCode = "IOBA0000312";
-		iob.swiftCode = "IOBAINBB312";
-		iob.noOfWorker = 20;
-		iob.managerName = "Prashant";
+		Bank iob = new Bank(7231649,"Indian Oversies Bank","lingadahalli","IOBA0000312","IOBAINBB312",20,"Prashant");
+		
 		System.out.println("Bank Details");
 		System.out.println("Bank Id is " + iob.bankId);
 		System.out.println("Bank Name is " + iob.bankName);
